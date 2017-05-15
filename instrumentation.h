@@ -1,4 +1,5 @@
-// // right here! https://devzone.zend.com/303/extension-writing-part-i-introduction-to-php-and-zend/
+// Boilerplate code with definitions and macros.
+// right here! https://devzone.zend.com/303/extension-writing-part-i-introduction-to-php-and-zend/
 #ifndef CODE_INSTRUMENTATION_H
 #define CODE_INSTRUMENTATION_H
 
@@ -29,8 +30,6 @@ PHP_RINIT_FUNCTION(instrumentation);
 #define M_TSRMLS_C  NULL
 #endif
 
-
-
 /* Function definition */
 PHP_FUNCTION(sqreenOn);
 PHP_FUNCTION(sqreenOff);
@@ -40,10 +39,4 @@ extern zend_module_entry instrumentation_module_entry;
 #define phpext_my_extension_ptr &instrumentation_module_entry
 
 
-
-
-
 #endif //CODE_INSTRUMENTATION_H
-
-
-// IDEA: https://github.com/abiusx/phpx/blob/master/sample.c#L262
